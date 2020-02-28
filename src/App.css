@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.grid {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  height: 600px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #44c7e3;
+  border-bottom: 5px solid #2ec0e0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-cell {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: white;
+}
+
+.cell-red {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: #d22626;
+}
+
+.cell-yellow {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: #fff62f;
+}
+
+/* .cell-pre-red {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: #f8d8d8;
+}
+
+.cell-pre-yellow {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: #fffdcc;
+} */
+
+.trapezoid {
+  border-bottom: 50px solid #44c7e3;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 750px;
 }
